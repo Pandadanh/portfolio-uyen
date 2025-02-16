@@ -19,10 +19,10 @@ const Header: React.FC = () => {
                     </div>
 
                     <nav className="hidden md:flex space-x-8">
-                        <a href="#" className="text-foreground hover:text-primary">Home</a>
-                        <a href="#" className="text-foreground hover:text-primary">Products</a>
-                        <a href="#" className="text-foreground hover:text-primary">Categories</a>
-                        <a href="#" className="text-foreground hover:text-primary">About</a>
+                        <a href="/pandadanh-shop/" className="text-foreground hover:text-primary">Home</a>
+                        <a href="/pandadanh-shop/" className="text-foreground hover:text-primary">Products</a>
+                        <a href="/pandadanh-shop/" className="text-foreground hover:text-primary">Categories</a>
+                        <a href="/pandadanh-shop/" className="text-foreground hover:text-primary">About</a>
                     </nav>
 
                     <div className="flex items-center space-x-4">

@@ -13,7 +13,10 @@ const App: React.FC = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/pandadanh-shop" element={<Home />} />
             <Route path="/products/:categoryName" element={<ProductList />} />
+            <Route path="/pandadanh-shop/products/:categoryName" element={<ProductList />} />
 
           </Routes>
         </main>

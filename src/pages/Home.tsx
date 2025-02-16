@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const categories = [
     {
@@ -29,7 +30,7 @@ const Home = () => {
     const navigate = useNavigate();
 
     const handleCategoryClick = (categoryName: string) => {
-        navigate(`/products/${categoryName}`);
+        navigate(`/pandadanh-shop/products/${categoryName}`);
     };
 
     return (
@@ -38,10 +39,18 @@ const Home = () => {
             {isMenuOpen && (
                 <div className="md:hidden bg-card shadow-sm">
                     <div className="px-2 pt-2 pb-3 space-y-1">
-                        <a href="#" className="block px-4 py-3 text-foreground hover:text-primary text-lg">Home</a>
-                        <a href="#" className="block px-4 py-3 text-foreground hover:text-primary text-lg">Products</a>
-                        <a href="#" className="block px-4 py-3 text-foreground hover:text-primary text-lg">Categories</a>
-                        <a href="#" className="block px-4 py-3 text-foreground hover:text-primary text-lg">About</a>
+                        <Link to="/#/" className="block px-4 py-3 text-foreground hover:text-primary text-lg">
+                            Home
+                        </Link>
+                        <Link to="/products" className="block px-4 py-3 text-foreground hover:text-primary text-lg">
+                            Products
+                        </Link>
+                        <Link to="/categories" className="block px-4 py-3 text-foreground hover:text-primary text-lg">
+                            Categories
+                        </Link>
+                        <Link to="/about" className="block px-4 py-3 text-foreground hover:text-primary text-lg">
+                            About
+                        </Link>
                     </div>
                 </div>
             )}
