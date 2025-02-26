@@ -1,0 +1,972 @@
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.gradient_gradient__QVNR2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 77px;
+    z-index: -1;
+    transition: opacity .25s linear;
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(19, 26, 30, .85), rgba(19, 26, 30, 0))
+}
+
+.gradient_gradient__QVNR2.gradient_hidden__2ve3E {
+    opacity: 0
+}
+
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.blog-teaser_blogTeaser__iN_2M {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden
+}
+
+.blog-teaser_blogTeaser__iN_2M .blog-teaser_img__xBa_M:hover img {
+    transform: scale(1.05)
+}
+
+.blog-teaser_content__FFQX2 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1
+}
+
+.blog-teaser_heading__KWHU_ {
+    color: #9fa1a3;
+    text-wrap: balance;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: .5rem
+}
+
+.blog-teaser_heading__KWHU_ h4 {
+    flex-grow: 1;
+    font-size: 1rem;
+    letter-spacing: 0 !important;
+    font-weight: 500;
+    margin: 0
+}
+
+.blog-teaser_heading__KWHU_:hover svg {
+    color: #fff
+}
+
+.blog-teaser_readMore__x1pdu {
+    display: flex;
+    flex-direction: row;
+    justify-content: end
+}
+
+.blog-teaser_text__jbhwi {
+    color: #ccc;
+    font-size: .9rem;
+    flex-grow: 1
+}
+
+.blog-teaser_img__xBa_M {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: .5rem
+}
+
+.blog-teaser_img__xBa_M img {
+    transition: transform .25s linear
+}
+
+.blog-teaser_timestamp__hb6gF {
+    position: absolute;
+    top: .75rem;
+    right: .75rem;
+    font-size: .75rem;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 4px;
+    border: 1px solid hsla(0, 0%, 100%, .05);
+    padding: .1rem .5rem
+}
+
+.blog-teaser_timestamp__hb6gF p {
+    margin: 0;
+    color: #ccc
+}
+
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.careers-teaser_loader__X05HV {
+    background: #0f1518;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px
+}
+
+.careers-teaser_loader__X05HV:after {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(100%);
+    position: absolute;
+    z-index: 1;
+    animation: careers-teaser_slide__y8MMs 1s infinite;
+    background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .8) 50%, rgba(128, 186, 232, 0) 99%, rgba(125, 185, 232, 0));
+    opacity: .1
+}
+
+.careers-teaser_link__XGSYV {
+    display: flex;
+    color: #e7e8e8;
+    align-items: center;
+    gap: 3rem
+}
+
+.careers-teaser_link__XGSYV:hover {
+    text-decoration: none
+}
+
+.careers-teaser_link__XGSYV h2 {
+    font-weight: 300
+}
+
+.careers-teaser_link__XGSYV h2,
+.careers-teaser_link__XGSYV strong {
+    flex: 1;
+    margin: 0
+}
+
+.careers-teaser_link__XGSYV .careers-teaser_condensed__jbiIo {
+    flex: 1
+}
+
+.careers-teaser_link__XGSYV p {
+    margin: 0;
+    color: #6f7374
+}
+
+.careers-teaser_careers__zZ6KP {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem
+}
+
+.careers-teaser_careers__zZ6KP li {
+    margin: 0;
+    padding: 0
+}
+
+@keyframes careers-teaser_slide__y8MMs {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    to {
+        transform: translateX(100%)
+    }
+}
+
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.grok-outline-teaser_teaser__opHLa {
+    height: calc(100svh - 77px - 1.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem
+}
+
+@media(max-width: 767.98px) {
+    .grok-outline-teaser_teaser__opHLa {
+        gap: 1rem;
+        justify-content: space-between;
+        padding-bottom: 3rem
+    }
+}
+
+.grok-outline-teaser_signIn__SODHJ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem
+}
+
+.grok-outline-teaser_signIn__SODHJ>* {
+    max-width: 390px
+}
+
+.grok-outline-teaser_signIn__SODHJ h1 {
+    font-size: 1.75rem;
+    font-weight: 300;
+    margin: 0;
+    text-align: center
+}
+
+.grok-outline-teaser_signIn__SODHJ div {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    font-size: .875rem;
+    color: #6f7374
+}
+
+.grok-outline-teaser_button__NQ2kQ {
+    border: 1px solid #575b5d;
+    border-radius: 2px;
+    background: #e7e8e8;
+    color: #0f1518;
+    flex: 0 0 50px;
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem
+}
+
+.grok-outline-teaser_button__NQ2kQ:hover {
+    text-decoration: none
+}
+
+.grok-outline-teaser_grok__Zcb_U {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.grok-outline-teaser_goToGrok__dU9ZY {
+    color: #9fa1a3;
+    position: relative;
+    font-size: 1.5rem;
+    transition: color .25s ease-out
+}
+
+.grok-outline-teaser_goToGrok__dU9ZY:hover {
+    text-decoration: none;
+    color: #fff
+}
+
+.grok-outline-teaser_goToGrok__dU9ZY:hover:after {
+    transform: translateY(-3px);
+    border-bottom-color: #fff
+}
+
+.grok-outline-teaser_goToGrok__dU9ZY:after {
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #9fa1a3;
+    transition: transform .25s ease-out, border-bottom-color .25s ease-out
+}
+
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.grok-outline_logo__Oi8QD {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-self: center;
+    width: 100%
+}
+
+@media(max-width: 767.98px) {
+    .grok-outline_logo__Oi8QD {
+        width: -moz-fit-content;
+        width: fit-content
+    }
+}
+
+.grok-outline_logo__Oi8QD:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #050505;
+    z-index: 10
+}
+
+.grok-outline_spacer__QUjne {
+    flex: 1;
+    background: #050505;
+    position: relative;
+    z-index: 2
+}
+
+.grok-outline_gradient__7rtND {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, #6f7374, #0f1518) 0 0;
+    opacity: .5;
+    animation: grok-outline_gradient__7rtND 4s linear forwards;
+    z-index: 3
+}
+
+.grok-outline_mouseMask__7FiGB {
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    background: red;
+    position: absolute;
+    z-index: 6;
+    overflow: hidden;
+    transition: transform .1s ease, background-color .1s linear;
+    animation: grok-outline_mask__8fqxa 2s linear forwards;
+    animation-delay: 2s;
+    opacity: 0;
+    mix-blend-mode: lighten;
+    transform: translate(43%, 32%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.grok-outline_mouseMask__7FiGB.grok-outline_second__bX4_B {
+    transition: transform .2s ease, background-color .2s linear
+}
+
+.grok-outline_mouseMask__7FiGB.grok-outline_third__zcD0B {
+    transition: transform .3s ease, background-color .3s linear
+}
+
+@keyframes grok-outline_gradient__7rtND {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .4
+    }
+}
+
+@keyframes grok-outline_mask__8fqxa {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.grok-outline_outline__pwT8v {
+    position: relative;
+    z-index: 10
+}
+
+@media(max-width: 767.98px) {
+    .grok-outline_outline__pwT8v {
+        display: none
+    }
+}
+
+.grok-outline_outline__pwT8v.grok-outline_xs__3_aKz {
+    display: none;
+    width: calc(100vw - 6rem)
+}
+
+@media(max-width: 767.98px) {
+    .grok-outline_outline__pwT8v.grok-outline_xs__3_aKz {
+        display: block
+    }
+}
+
+.grok-outline_dash__8_zAL {
+    stroke: #000;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: grok-outline_dash__8_zAL 2.5s linear forwards;
+    animation-delay: .25s;
+    stroke-width: 1px
+}
+
+@keyframes grok-outline_dash__8_zAL {
+    to {
+        stroke-dashoffset: 0
+    }
+}
+
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.site-footer_footer___c5T3 {
+    border-top: 1px solid #333;
+    margin-top: 1.5rem;
+    padding: 3rem 0;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background: #050505;
+    font-size: var(--step--1)
+}
+
+.site-footer_footer___c5T3 a {
+    display: inline-block;
+    text-decoration: none;
+    color: #9fa1a3
+}
+
+@media(min-width: 768px) {
+    .site-footer_footer___c5T3 a {
+        padding: .25rem 1.5rem
+    }
+}
+
+.site-footer_footer___c5T3 a:hover {
+    color: #fff
+}
+
+@media(min-width: 768px) {
+    .site-footer_footer___c5T3 {
+        border-top: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center
+    }
+}
+
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.content-box_wrapper___f519 {
+    background: #0f1518;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center
+}
+
+.content-box_wrapper___f519 hr {
+    margin: 3rem 0
+}
+
+.content-box_wrapper___f519 p strong {
+    font-weight: 500
+}
+
+.content-box_wrapper___f519 h1 {
+    font-size: 1.5rem
+}
+
+.content-box_wrapper___f519 h2 {
+    font-size: 1.25rem
+}
+
+.content-box_wrapper___f519 h3,
+.content-box_wrapper___f519 h4,
+.content-box_wrapper___f519 h5 {
+    font-size: 1rem
+}
+
+.content-box_wrapper___f519 h1,
+.content-box_wrapper___f519 h2 {
+    letter-spacing: -.25px
+}
+
+.content-box_wrapper___f519 h1,
+.content-box_wrapper___f519 h2,
+.content-box_wrapper___f519 h3,
+.content-box_wrapper___f519 h4,
+.content-box_wrapper___f519 h5 {
+    font-weight: 500
+}
+
+.content-box_wrapper___f519 code {
+    background: #192328;
+    color: #2196f3;
+    padding: 2px 5px;
+    margin: 0 2px;
+    border-radius: 5px;
+    white-space: nowrap
+}
+
+.content-box_wrapper___f519.content-box_transparent__mGBKd {
+    background: transparent
+}
+
+.content-box_prose__Xukvg li,
+.content-box_prose__Xukvg p,
+.content-box_prose__Xukvg ul {
+    line-height: 2rem;
+    color: #ccc
+}
+
+.content-box_prose__Xukvg p strong {
+    color: #fff
+}
+
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.hero_hero__PJjhY {
+    text-wrap: pretty;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 1.5rem auto;
+    max-width: 1024px
+}
+
+.hero_hero__PJjhY img {
+    width: 100%;
+    height: auto
+}
+
+.hero_hero__PJjhY h1 {
+    margin: 0 0 .5rem;
+    font-size: 2.5rem;
+    letter-spacing: .25px
+}
+
+.hero_hero__PJjhY h1 a,
+.hero_hero__PJjhY h1 a:visited {
+    color: #fff
+}
+
+@media(min-width: 1200px) {
+    .hero_hero__PJjhY h1 {
+        font-size: 2.5rem
+    }
+}
+
+.hero_hero__PJjhY p {
+    opacity: .9;
+    line-height: 1.75rem
+}
+
+@media(min-width: 1200px) {
+    .hero_hero__PJjhY p {
+        font-size: 1rem
+    }
+}
+
+@media(min-width: 768px) {
+    .hero_hero__PJjhY {
+        background: #0f1518;
+        padding: 1.5rem
+    }
+}
+
+.hero_timestamp__NLcXL {
+    color: #6f7374
+}
+
+.hero_text__u2ygw {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem
+}
+
+@media(min-width: 992px) {
+    .hero_text__u2ygw {
+        padding: 0 1.5rem
+    }
+}
+
+.hero_arrowContainer__nFI20 {
+    display: flex;
+    flex-direction: row
+}
+
+@media(min-width: 1200px) {
+    .hero_arrowContainer__nFI20 {
+        justify-content: end
+    }
+}
+
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.product-teaser_teaser__fjsiL {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #cfd0d1;
+    height: 300px
+}
+
+@media(max-width: 767.98px) {
+    .product-teaser_teaser__fjsiL {
+        background: #0f1518;
+        border-radius: 2px;
+        padding: 1.5rem
+    }
+}
+
+.product-teaser_teaser__fjsiL .product-teaser_header__xn5w8 {
+    display: flex;
+    justify-content: space-between;
+    align-self: stretch
+}
+
+.product-teaser_teaser__fjsiL:hover {
+    text-decoration: none
+}
+
+.product-teaser_teaser__fjsiL h1,
+.product-teaser_teaser__fjsiL p {
+    margin: 0;
+    font-weight: 300
+}
+
+.product-teaser_line__eZNpd {
+    height: calc(100% + 3rem);
+    width: 1px;
+    background: #9fa1a3;
+    margin: -1.5rem 0
+}
+
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.heading_readMore__Win4C {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin: 18rem 0 9rem
+}
+
+@media(max-width: 991.98px) {
+    .heading_readMore__Win4C {
+        margin-bottom: 3rem;
+        gap: 1.5rem
+    }
+}
+
+.heading_readMore__Win4C:first-child {
+    margin-top: 0
+}
+
+@media(max-width: 991.98px) {
+    .heading_readMore__Win4C:first-child {
+        margin-top: 18rem
+    }
+}
+
+.heading_readMore__Win4C h1 {
+    margin: 0
+}
+
+.heading_readMore__Win4C .heading_line__PRk5Q {
+    height: 1px;
+    flex: 1;
+    background: #9fa1a3
+}
+
+.heading_readMore__Win4C a {
+    color: #9fa1a3;
+    position: relative;
+    font-size: 1.5rem;
+    transition: color .25s ease-out
+}
+
+@media(max-width: 991.98px) {
+    .heading_readMore__Win4C a {
+        font-size: 1.25rem
+    }
+}
+
+.heading_readMore__Win4C a:hover {
+    text-decoration: none;
+    color: #fff
+}
+
+.heading_readMore__Win4C a:hover:after {
+    transform: translateY(-3px);
+    border-bottom-color: #fff
+}
+
+.heading_readMore__Win4C a:after {
+    content: " ";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #9fa1a3;
+    transition: transform .25s ease-out, border-bottom-color .25s ease-out
+}
+
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.site-header_header__PTnp0 {
+    min-height: 77px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background: #050505
+}
+
+.site-header_header__PTnp0 .site-header_foreground__etqdK {
+    min-height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.site-header_header__PTnp0.site-header_mobile__1Lqde {
+    z-index: 2
+}
+
+.site-header_header__PTnp0 a {
+    color: #9fa1a3
+}
+
+.site-header_placeholder__KcA86 {
+    flex: 0 0 77px
+}
+
+.site-header_logo__QGAGJ {
+    padding-right: 1.5rem
+}
+
+.site-header_logo__QGAGJ a {
+    line-height: 1
+}
+
+.site-header_logoLink__9rqP5 {
+    display: block;
+    height: 32px
+}
+
+.site-header_mainNav__M1I3L {
+    flex: 1;
+    gap: 21px;
+    align-items: center
+}
+
+.site-header_integrations__Za5ws {
+    align-items: center;
+    gap: 21px
+}
+
+.site-header_search__jbR7e {
+    flex: 1
+}
+
+.site-header_integrations__Za5ws,
+.site-header_mainNav__M1I3L {
+    display: flex;
+    line-height: 1
+}
+
+.site-header_integrations__Za5ws svg,
+.site-header_mainNav__M1I3L svg {
+    line-height: 0
+}
+
+.site-header_integrations__Za5ws a:not(.site-header_logoLink__9rqP5),
+.site-header_mainNav__M1I3L a:not(.site-header_logoLink__9rqP5) {
+    display: block;
+    position: relative;
+    text-decoration: none
+}
+
+.site-header_integrations__Za5ws a:not(.site-header_logoLink__9rqP5).site-header_primary__Ud8KI,
+.site-header_mainNav__M1I3L a:not(.site-header_logoLink__9rqP5).site-header_primary__Ud8KI {
+    color: #e7e8e8
+}
+
+.site-header_integrations__Za5ws a:not(.site-header_logoLink__9rqP5):after,
+.site-header_mainNav__M1I3L a:not(.site-header_logoLink__9rqP5):after {
+    content: " ";
+    bottom: -8px;
+    left: -4px;
+    right: -4px;
+    position: absolute;
+    border-top: 2px solid #fff;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform .6s cubic-bezier(.19, 1, .22, 1)
+}
+
+.site-header_integrations__Za5ws a:not(.site-header_logoLink__9rqP5).site-header_active___LqO0,
+.site-header_integrations__Za5ws a:not(.site-header_logoLink__9rqP5):hover,
+.site-header_mainNav__M1I3L a:not(.site-header_logoLink__9rqP5).site-header_active___LqO0,
+.site-header_mainNav__M1I3L a:not(.site-header_logoLink__9rqP5):hover {
+    text-decoration: none;
+    color: #fff
+}
+
+.site-header_integrations__Za5ws a:not(.site-header_logoLink__9rqP5).site-header_active___LqO0:after,
+.site-header_integrations__Za5ws a:not(.site-header_logoLink__9rqP5):hover:after,
+.site-header_mainNav__M1I3L a:not(.site-header_logoLink__9rqP5).site-header_active___LqO0:after,
+.site-header_mainNav__M1I3L a:not(.site-header_logoLink__9rqP5):hover:after {
+    transition-duration: .4s;
+    transform: scaleX(1);
+    transform-origin: left center
+}
+
+.site-header_integrations__Za5ws a:not(.site-header_logoLink__9rqP5).site-header_active___LqO0:after,
+.site-header_mainNav__M1I3L a:not(.site-header_logoLink__9rqP5).site-header_active___LqO0:after {
+    border-top-color: #2196f3
+}
+
+.site-header_mobileNav__duaY_ {
+    position: fixed;
+    top: 77px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, .9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    animation: site-header_appear__kBkGR .25s ease-out forwards;
+    overflow-y: auto
+}
+
+.site-header_mainMobileNav__qFKQi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem
+}
+
+.site-header_mainMobileNav__qFKQi li {
+    margin: 0;
+    padding: 0
+}
+
+.site-header_mainMobileNav__qFKQi a {
+    font-size: 1.75rem;
+    color: #e7e8e8
+}
+
+.site-header_mainMobileNav__qFKQi.site-header_secondary__RxHG5 {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #9fa1a3
+}
+
+.site-header_mainMobileNav__qFKQi.site-header_secondary__RxHG5 a {
+    font-size: 1.25rem;
+    color: #9fa1a3
+}
+
+.site-header_menuBtn__iQKk8 {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: #e7e8e8
+}
+
+.site-header_menuBtn__iQKk8:hover {
+    text-decoration: underline
+}
+
+@keyframes site-header_appear__kBkGR {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.about_line__sVkMQ {
+    height: calc(100% + 3rem);
+    width: 1px;
+    background: #9fa1a3;
+    margin: -1.5rem 0
+}
+
+.about_slogan__8XU7O {
+    color: #b7b9ba;
+    text-wrap: balance
+}
+
+.about_timeline__DDg8g {
+    text-align: right;
+    color: #878a8c
+}
+
+@media(max-width: 767.98px) {
+    .about_timeline__DDg8g {
+        text-align: left;
+        margin-bottom: 0
+    }
+
+    .about_heading__SMwIm {
+        margin-top: 0
+    }
+}
+
+.about_description__s4uuY {
+    text-wrap: pretty
+}
+
+/*!
+ * Bootstrap  v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+.career_line__WKrVD {
+    height: calc(100% + 3rem);
+    width: 1px;
+    background: #9fa1a3;
+    margin: -1.5rem 0
+}
+
+.career_slogan__J7rsh {
+    color: #b7b9ba;
+    text-wrap: balance
+}
