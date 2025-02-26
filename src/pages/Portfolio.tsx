@@ -1,13 +1,24 @@
 import React, { useState, useEffect } from "react";
-import { motion, useScroll, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { FaLinkedin, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 import { SiAdobephotoshop, SiAdobeillustrator, SiFigma, SiGoogleanalytics, SiHubspot } from "react-icons/si";
+import { Element, scroller } from "react-scroll";
 
 const Portfolio = () => {
     const [darkMode, setDarkMode] = useState(false);
-    const controls = useAnimation();
-    const { scrollYProgress } = useScroll();
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            scroller.scrollTo("about", {
+                duration: 500,
+                delay: 0,
+                smooth: "easeInOutQuart",
+            });
+        },); // Adjust the delay as needed
+
+        return () => clearTimeout(timer);
+    }, []);
 
     const skills = [
         { name: "Adobe Photoshop", icon: SiAdobephotoshop, proficiency: 85 },
@@ -67,54 +78,76 @@ const Portfolio = () => {
             </motion.section>
 
             {/* About Section */}
+            <Element name="about">
+                <motion.section
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true }}
+                    className="py-20 px-4 md:px-20"
+                >
+                    <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                        <motion.img
+                            src="https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:ifs%3A%2F%2F%2F7ffec690-e0cc-48a2-84ff-886e57fafc8f/watermark:F/width:695?csig=AAAAAAAAAAAAAAAAAAAAAEWfSDLImf61GIaA29s1mFAkUkGTcCYVNfiA_fWC7Pgc&exp=1740590172&osig=AAAAAAAAAAAAAAAAAAAAAO98sBtrUacfT2_Bz87rcOv9hm5aek8oBNvnRHunDvY0&signer=media-rpc&x-canva-quality=screen"
+                            alt="Profile"
+                            className="rounded-lg shadow-lg w-full object-cover"
+                            whileHover={{ scale: 1.05 }}
+                        />
+                        <div>
+                            <h2 className="text-3xl font-bold mb-6 text-primary-foreground">About Me</h2>
+                            <p className="text-lg text-foreground">
+                                Passionate marketing professional with a creative mindset and analytical approach.
+                                Specialized in digital marketing strategies and brand development.
+                            </p>
+                        </div>
+                    </div>
+                </motion.section>
+            </Element>
+
+            {/* Skills Section */}
             <motion.section
+                className="py-20 px-4 bg-card"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                className="py-20 px-4 md:px-20"
             >
-                <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-                    <motion.img
-                        src="https://media.canva.com/v2/image-resize/format:PNG/height:800/quality:100/uri:ifs%3A%2F%2F%2F7ffec690-e0cc-48a2-84ff-886e57fafc8f/watermark:F/width:695?csig=AAAAAAAAAAAAAAAAAAAAAEWfSDLImf61GIaA29s1mFAkUkGTcCYVNfiA_fWC7Pgc&exp=1740590172&osig=AAAAAAAAAAAAAAAAAAAAAO98sBtrUacfT2_Bz87rcOv9hm5aek8oBNvnRHunDvY0&signer=media-rpc&x-canva-quality=screen"
-                        alt="Profile"
-                        className="rounded-lg shadow-lg w-full"
-                        whileHover={{ scale: 1.05 }}
-                    />
-                    <div>
-                        <h2 className="text-3xl font-bold mb-6 text-primary-foreground">About Me</h2>
-                        <p className="text-lg text-foreground">
-                            Passionate marketing professional with a creative mindset and analytical approach.
-                            Specialized in digital marketing strategies and brand development.
-                        </p>
-                    </div>
-                </div>
-            </motion.section>
-
-            {/* Skills Section */}
-            <section className="py-20 px-4 md:px-20 bg-secondary">
-                <h2 className="text-3xl font-bold text-center mb-12 text-primary-foreground">Skills</h2>
-                <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <motion.h2
+                    className="text-3xl font-bold text-center mb-12 text-black"
+                    initial={{ y: 20, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    Skills
+                </motion.h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
                     {skills.map((skill, index) => (
                         <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
+                            key={skill.name}
+                            className="p-6 rounded-lg bg-secondary shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            initial={{ y: 50, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
                             transition={{ delay: index * 0.2 }}
-                            className="bg-card p-6 rounded-lg shadow-sm text-center"
                             whileHover={{ scale: 1.05 }}
                         >
-                            <skill.icon className="text-4xl mb-4 mx-auto text-primary" />
-                            <h3 className="text-lg font-semibold mb-2">{skill.name}</h3>
-                            <div className="w-full bg-muted rounded-full h-2">
-                                <div
-                                    className="bg-primary h-2 rounded-full"
-                                    style={{ width: `${skill.proficiency}%` }}
+                            <motion.div
+                                className="text-4xl mb-4 text-primary"
+                                whileHover={{ rotate: 360 }}
+                                transition={{ duration: 0.5 }}
+                            >
+                                {React.createElement(skill.icon)}
+                            </motion.div>
+                            <h3 className="text-xl font-semibold mb-2 text-black">{skill.name}</h3>
+                            <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
+                                <motion.div
+                                    className="bg-primary h-full rounded-full"
+                                    initial={{ width: 0 }}
+                                    whileInView={{ width: `${skill.proficiency}%` }}
+                                    transition={{ duration: 1, ease: "easeOut" }}
                                 />
                             </div>
                         </motion.div>
                     ))}
                 </div>
-            </section>
+            </motion.section>
 
             {/* Experience Section */}
             <section className="py-20 px-4 md:px-20">
